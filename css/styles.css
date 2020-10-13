@@ -1,32 +1,13 @@
 body {
   font-family:'Montserrat', sans-serif;
+  text-align: center;
 }
 
-.container-fluid {
-  padding: 3% 15% 7%; /* 3% to top and bottom, 15% left and right.*/
-}
-
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
-
-.logo {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  font-size: 2.3rem;
-}
-
-h1 {
-  font-family:'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
   font-weight: 800;
   line-height: 1.5;
 }
@@ -34,15 +15,46 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  font-family:'Montserrat', sans-serif;
   font-weight: bold;
 }
 
 p {
   color: #8f8f8f;
-  font-family:'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Title Section */
+.big-heading {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Sections */
+.white-section {
+  background-color: white;
+}
+
+.coloured-section {
+  background-color: #ff4c68;
+  color: white;
+
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%; /* 3% to top and bottom, 15% left and right.*/
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 2.3rem;
 }
 
 /*Navigation Bar*/
@@ -59,6 +71,7 @@ p {
 
 .nav-item {
   padding: 0 18px;
+  text-align: right;
 }
 
 .nav-link {
@@ -82,15 +95,11 @@ p {
 
 /* Features Section */
 #features {
-  padding: 7% 15%;
-  background-color: white;
   position: relative;
   z-index: 1;
-
 }
 
 .feature-box {
-  text-align: center;
   padding: 5% 4%;
 }
 
@@ -106,9 +115,7 @@ p {
 
 /* Testimonials */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: white;
 }
 
 .testimonial-image {
@@ -117,13 +124,16 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 2.5rem;
 }
 
+.carousel-item {
+}
+
+/* Press Section */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -137,8 +147,12 @@ p {
   margin: 100px;
 }
 
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .card {
-  text-align: center;
 }
 
 .pricing-column {
@@ -146,9 +160,6 @@ p {
 }
 
 #cta {
-  background-color: #ff4c68;
-  text-align: center;
-  color: white;
   font-weight: 900;
 }
 
@@ -157,22 +168,16 @@ p {
 }
 
 #footer {
-  text-align: center;
   padding: 5% 20%;
 }
 
 #footer p {
-  text-align: center;
   font-weight: 500;
 }
 
 .icon-social {
   margin-bottom: 1rem;
   padding: 0.5rem;
-}
-
-.icon-box {
-
 }
 
 @media (max-width: 1028px) {
@@ -187,13 +192,13 @@ p {
 }
 
 @media (min-width: 1500px) {
-  .container-fluid {
+  #title .container-fluid {
     padding: 3% 15% 13%; /* 3% to top and bottom, 15% left and right.*/
   }
 }
 
 @media (min-height: 800px) {
-  .container-fluid {
+  #title .container-fluid {
     padding: 3% 15% 18%; /* 3% to top and bottom, 15% left and right.*/
   }
 
@@ -206,13 +211,18 @@ p {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
   h2 {
     font-size: 2rem;
   }
 
-  h1 {
-    font-size: 2.5rem;
+  .navbar-toggler-icon {
+    width: 3rem;
+    height: 3rem;
   }
 
 }
